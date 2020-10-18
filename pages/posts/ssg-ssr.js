@@ -1,6 +1,5 @@
 
 import Layout from '../../components/layout'
-// import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
@@ -10,7 +9,7 @@ export default function ssg_ssrPost() {
   return (
     <Layout>
       <Head>
-        <title>'When to Use Static Generation v.s. Server-side Rendering'</title>
+        <title>When to Use Static Generation v.s. Server-side Rendering</title>
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>'When to Use Static Generation v.s. Server-side Rendering'</h1>

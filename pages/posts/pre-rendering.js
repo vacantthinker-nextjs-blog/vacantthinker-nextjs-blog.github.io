@@ -1,6 +1,5 @@
 
 import Layout from '../../components/layout'
-// import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
@@ -10,7 +9,7 @@ export default function pre_renderingPost() {
   return (
     <Layout>
       <Head>
-        <title>'Two Forms of Pre-rendering'</title>
+        <title>Two Forms of Pre-rendering</title>
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>'Two Forms of Pre-rendering'</h1>
