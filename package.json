@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "git remote add": "git remote add origin https://github.com/vacantthinker-nextjs-blog/vacantthinker-nextjs-blog.github.io.git",
+
     "dev": "next dev",
     "build": "next build",
     "start": "next build && next start",
     "clean-out": "rd /s /q out",
+
     "export": "next build && next export && echo '' >> out/.nojekyll",
     "push-main-defaultBranch": "cd out && git init && git remote add origin https://github.com/vacantthinker-nextjs-blog/vacantthinker-nextjs-blog.github.io.git && git add . && git commit -m \"new\" && git branch main master && git checkout main && git push origin main --force",
-    "export-and-push-defaultBranch": "npm run export && npm run push-main-defaultBranch && npm run clean-out",
-    "git remote add": "git remote add origin https://github.com/vacantthinker-nextjs-blog/vacantthinker-nextjs-blog.github.io.git",
-    "push-master": "git branch && git checkout master && git add . && git commit -m 'n' && git push origin master --force"
+    "export-and-push-main-defaultBranch": "npm run export && npm run push-main-defaultBranch && npm run clean-out",
+
+    "push-master": "git checkout master && git add . && git commit -m 'n' && git push origin master --force",
+    "push-master-and-main-defaultBranch": "npm run push-master && npm run export-and-push-main-defaultBranch"
   },
   "dependencies": {
     "next": "9.5.5",
