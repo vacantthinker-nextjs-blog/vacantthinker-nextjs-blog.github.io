@@ -1,0 +1,1 @@
+cd out && git init && git remote add origin https://github.com/vacantthinker-nextjs-blog/vacantthinker-nextjs-blog.github.io.git && git add . && git commit -m "new" && git branch gh-pages master && git checkout gh-pages && git push origin --delete gh-pages && git push origin gh-pages

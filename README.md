@@ -1,3 +1,30 @@
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+
+# nextjsblog
+
+package.json
+```cmd
+next build && next export
+```
+
+```cmd
+
+git branch -d gh-pages
+
+cd out
+git init
+git remote add origin https://github.com/vacantthinker-nextjs-blog/vacantthinker-nextjs-blog.github.io.git
+git add .
+git commit -m "new"
+
+git branch gh-pages master
+git checkout gh-pages
+git push origin --delete gh-pages
+git push origin gh-pages
+
+```
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
