@@ -11,7 +11,7 @@
     "push-main-defaultBranch": "cd out && git init && git remote add origin https://github.com/vacantthinker-nextjs-blog/vacantthinker-nextjs-blog.github.io.git && git add . && git commit -m \"new\" && git branch main master && git checkout main && git push origin main --force",
     "export-and-push-defaultBranch": "npm run export && npm run push-main-defaultBranch && npm run clean-out",
     "git remote add": "git remote add origin https://github.com/vacantthinker-nextjs-blog/vacantthinker-nextjs-blog.github.io.git",
-    "push-master": "git branch && git checkout master && git add . && git commit -m 'n' && git push origin master"
+    "push-master": "git branch && git checkout master && git add . && git commit -m 'n' && git push origin master --force"
   },
   "dependencies": {
     "next": "9.5.5",
